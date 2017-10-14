@@ -38,6 +38,7 @@ services:
       - 'xpack.monitoring.enabled=false'
       - 'xpack.security.enabled=false'
       - 'xpack.watcher.enabled=false'
+      - 'http.max_content_length=500mb'
     image: 'docker.elastic.co/elasticsearch/elasticsearch:5.4.1'
     labels:
       io.rancher.container.hostname_override: container_name
@@ -76,6 +77,7 @@ services:
       - 'xpack.monitoring.enabled=false'
       - 'xpack.security.enabled=false'
       - 'xpack.watcher.enabled=false'
+      - 'http.max_content_length=500mb'
     image: 'docker.elastic.co/elasticsearch/elasticsearch:5.4.1'
     labels:
       io.rancher.container.hostname_override: container_name
@@ -113,6 +115,7 @@ services:
       - 'xpack.monitoring.enabled=false'
       - 'xpack.security.enabled=false'
       - 'xpack.watcher.enabled=false'
+      - 'http.max_content_length=500mb'
     image: 'docker.elastic.co/elasticsearch/elasticsearch:5.4.1'
     labels:
       io.rancher.container.hostname_override: container_name
